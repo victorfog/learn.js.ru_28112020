@@ -1,17 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'; // постройка самого дерева реакта
+import ReactDOM from 'react-dom'; // рендер дерева он может быть разный и рендерить не только в браузер например для 3d очков
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// ReactDom.render (что мы рендерим, во что)
+ReactDOM.render (<h1>Hello Word</h1>, document.getElementById('root'));
